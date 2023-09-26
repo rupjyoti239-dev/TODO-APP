@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.app{
+  background-color: #fff;
+  width: 300px;
+  height: 70vh;
+  overflow-y: scroll;
+  border: 3px solid #abcea1;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.app::-webkit-scrollbar {
+   width: 0 !important 
+  }
+
+h4{
+  margin-bottom: 10px;
+}
+
+#addNew{
+  background-color: #abcea161;
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#addNew i{
+  background-color: #abcea1;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+h5{
+  text-align: center;
+  margin: 10px auto;
+}
+
+
+#tasks{
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+#tasks div{
+  background-color: #abcea170;
+  padding: 10px;
+  border: 3px solid #abcea1;
+  border-radius: 8px;
+  display: grid;
+  gap: 5px;
+}
+.options{
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.options i{
+  cursor: pointer;
+}
+
+#emptyTaskName, #emptyDate, #emptyDesc{
+  color: red;
+}
