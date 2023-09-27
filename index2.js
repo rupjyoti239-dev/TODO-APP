@@ -112,3 +112,33 @@ const restForm = () => {
 
 
 
+
+
+
+// search 
+const search = ()=>{
+  let filter = document.getElementById('myInput').value.toUpperCase();
+  let post = document.getElementById('tasks')
+  let card = post.children;
+  // console.log(task);
+
+  for(let i=0;i<card.length;i++){
+    let p = card[i].getElementsByTagName('span')[0]
+    console.log(p);
+
+    if(p){
+      let textValue = p.textContent || p.innerHTML;
+
+      if(textValue.toUpperCase().indexOf(filter) >-1){
+          card[i].style.display = "";
+        }else{
+          card[i].style.display = "none";
+        }
+    }
+
+    
+
+  }
+}
+
+
